@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Chai aur code</title>
+  </head>
+  <body style="background-color: #212121; color: #fff"></body>
+  <script>
+    const div = document.createElement("div");
+    // const addText = document.createTextNode(
+    //   "When i enter the competiton then the opponents should drop their weapons and their legs gets shakey cause the man has arrived and the game is lost that is the level of competance i want to operate in life and that comes with immense hardwrok which ill do and also paractive humility "
+    // );
+    // div.appendChild(addText);
+
+    div.innerHTML =
+      "<p>When i enter the competiton then the opponents should drop their weapons and their legs gets shakey cause the man has arrived and the game is lost that is the level of competance i want to operate in life and that comes with immense hardwrok which ill do and also paractive humility</p>";
+
+    function createDiv(textContent, colorArray) {
+      const div1 = document.createElement("p");
+      div1.innerText = textContent;
+      document.body.appendChild(div1);
+      let i = 0;
+      setInterval(() => {
+        i = (i + 1) % colorArray.length;
+        div1.style.backgroundColor = colorArray[i];
+        i++;
+      }, 1000);
+    }
+
+    const colorArray = ["red", "blue", "green", "violet", "yellow"];
+    // createDiv("DFasdfsadfasdfasdf", colorArray);
+  </script>
+</html>
