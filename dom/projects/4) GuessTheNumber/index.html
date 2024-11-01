@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body
+    style="
+      background-color: #212121;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    "
+  >
+    <div>
+      <div id="info">
+        <div>Number guesing game</div>
+        <p>Try and guess a random number beteween 1 and 100</p>
+        <p>You have 10 attempts to guess the right numeber</p>
+      </div>
+      <div class="game">
+        <h1>Guess the number</h1>
+        <input
+          max="100"
+          min="1"
+          id="guess"
+          type="number"
+          style="border-width: 4px"
+        />
+      </div>
+      <div class="answer">
+        <button
+          style="
+            background: #000;
+            color: #fff;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 20px;
+            margin-left: 20px;
+          "
+          id="submitButton"
+        >
+          Submit Guess
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

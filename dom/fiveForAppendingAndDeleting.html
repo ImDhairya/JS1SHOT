@@ -48,6 +48,11 @@
 
     // another method to do the same thing
 
-    firstLang.outerHTML = '<li>TeriTohScript</li>'
+    firstLang.outerHTML = "<li>TeriTohScript</li>";
+
+    // remove
+
+    const lastLang = document.querySelector("li:last-child");
+    lastLang.remove();
   </script>
 </html>
